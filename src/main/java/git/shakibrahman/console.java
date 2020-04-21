@@ -52,10 +52,11 @@ public class console {
                 user = new Person(in.nextLine());
             } while (user.getName().equals(""));
 
-            System.out.print("Password: ");
-            user.setPassword(in.nextLine());
+            // comment out these if you're using a real terminal
+            // System.out.print("Password: ");
+            // user.setPassword(in.nextLine());
 
-            /*
+            // comment out this if you're using an IDE
             Console console = System.console();
 
             do {
@@ -66,7 +67,6 @@ public class console {
                 }
                 user.setPassword(pw.toString());
             } while (user.getPassword().equals(""));
-            */
 
             do {
                 System.out.print("PIN: ");
